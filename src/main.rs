@@ -86,23 +86,15 @@ pub fn get_array(arr1: &[i32], arr2: &[i32]) -> Vec<i32> {
 
     match (increase1, increase2) {
         (true, true) => {
-            println!("{:?}", deduplicated_arr1);
-            println!("{:?}", deduplicated_arr2);
             find_unique_elements_increase(&deduplicated_arr1, &deduplicated_arr2)
         },
         (false, false) => {
-            println!("{:?}", deduplicated_arr1);
-            println!("{:?}", deduplicated_arr2);
             find_unique_elements_decrease(&deduplicated_arr1, &deduplicated_arr2)
         },
         (true, false) => {
-            println!("{:?}", &deduplicated_arr1);
-            println!("{:?}", revert(&deduplicated_arr2));
             find_unique_elements_increase(&deduplicated_arr1, &revert(&deduplicated_arr2))
         },
         (false, true) => {
-            println!("{:?}", &revert(&deduplicated_arr1));
-            println!("{:?}", &deduplicated_arr2);
             find_unique_elements_increase(&revert(&deduplicated_arr1), &deduplicated_arr2)
         },
     }
