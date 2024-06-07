@@ -1,5 +1,5 @@
 fn find_unique_elements_increase(arr1: &[i32], arr2: &[i32]) -> Vec<i32> {
-   
+
     let mut result = Vec::new();
     let (mut i, mut j) = (0, 0);
 
@@ -112,21 +112,21 @@ pub fn get_array(arr1: &[i32], arr2: &[i32]) -> Vec<i32> {
 }
 
 fn main() {
-    // let arr1 = vec![1, 2, 3, 4, 5];
-    // let arr2 = vec![3, 4, 5, 6, 6, 7];
-    //
-    // println!("Unique elements increase: {:?}", get_array(&arr1, &arr2));
-    //
-    // let arr1 = vec![5, 4, 3, 2, 1];
-    // let arr2 = vec![7, 6, 6, 5, 4, 3];
-    //
-    // println!("Unique elements decrease: {:?}", get_array(&arr1, &arr2));
-    //
-    // let arr1 = vec![5, 4, 3, 2, 1];
-    // let arr2 = vec![3, 4, 5, 6, 6, 7];
-    //
-    // println!("Unique elements decrease: {:?}", get_array(&arr1, &arr2));
-    //
+    let arr1 = vec![1, 2, 3, 4, 5];
+    let arr2 = vec![3, 4, 5, 6, 6, 7];
+
+    println!("Unique elements increase: {:?}", get_array(&arr1, &arr2));
+
+    let arr1 = vec![5, 4, 3, 2, 1];
+    let arr2 = vec![7, 6, 6, 5, 4, 3];
+
+    println!("Unique elements decrease: {:?}", get_array(&arr1, &arr2));
+
+    let arr1 = vec![5, 4, 3, 2, 1];
+    let arr2 = vec![3, 4, 5, 6, 6, 7];
+
+    println!("Unique elements decrease: {:?}", get_array(&arr1, &arr2));
+
 
     let arr1 = vec![3, 4, 5, 6, 6, 7];
     let arr2 = vec![5, 4, 3, 2, 1];
